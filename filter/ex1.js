@@ -12,13 +12,9 @@ Expected OUTPUT for this sample:
   [7, 2, 0, 3, 11]
 
 */
-const inputArray = [7, -4, 2, 0, -10, 3, 11];
-
-function getPositiveNumbers(numbers) {
-  return numbers >= 0;
+function getPositiveNumbers(inputArray) {
+  return inputArray.filter((number) => number >= 0)
 }
-const outputArray = inputArray.filter(getPositiveNumbers);
-console.log(outputArray);
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
 // console.log INSIDE the function).
